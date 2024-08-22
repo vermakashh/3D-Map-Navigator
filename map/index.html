@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo0.png" alt="Logo"> <!-- Replace 'logo2.png' with your logo file -->
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Type or select a category..." id="product-search">
+        <select id="category-dropdown" onchange="document.getElementById('product-search').value = this.value;">
+            <option value="" disabled selected>Select a category</option>
+            <option value="games">Games</option>
+            <option value="beauty">Beauty</option>
+            <option value="medical">Medical</option>
+            <option value="sports">Sports</option>
+            <option value="grocery">Grocery</option>
+            <option value="furniture">Furniture</option>
+            <option value="electronics">Electronics</option>
+            <option value="hardware">Hardware</option>
+            <option value="stationery">Stationery</option>
+        </select>
+        <button onclick="searchProduct()">Search</button>
+    </div>
+
+    <!-- 3D Container -->
+    <div id="container3D"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by Team MapmyMart<br>Akash Verma. Yash Pandey. Srija Shukla</p>
+    </footer>
+
+    <!-- Import Three.js and custom JavaScript -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

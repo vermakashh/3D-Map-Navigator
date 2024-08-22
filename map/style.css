@@ -1,0 +1,80 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the main header with an image on the left */
+header {
+  background-color: #007BFF; /* Blue header */
+  padding: 10px 20px; /* Adjust padding to control header height */
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align content to the left */
+  height: 70px; /* Set a fixed height for the header */
+}
+
+/* Styling the image inside the header */
+.header-image {
+  height: 100%; /* Make the image fill the header's height */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+/* Search container positioned below the header, aligned to the left */
+.search-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  padding: 20px 40px; /* Add some padding for spacing */
+  background-color: #f0f0f0; /* Light gray background for the search area */
+}
+
+/* Styling the search bar and dropdown combined */
+.search-container input[type="text"],
+.search-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  margin-right: 10px; /* Space between the input/dropdown and button */
+}
+
+/* Styling the search bar */
+.search-container input[type="text"] {
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Styling the dropdown */
+.search-container select {
+  width: 180px; /* Adjust width as needed */
+}
+
+/* Styling the search button */
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #007BFF; /* Same blue as the header */
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+}

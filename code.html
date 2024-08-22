@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website with Search Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleSearch(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            if (searchValue === 'delhi') {
+                window.location.href = 'map/index.html'; // Redirect to the 3D model viewer page
+            } else {
+                alert('Location not found');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="header-image">
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form onsubmit="handleSearch(event)">
+            <input type="text" placeholder="Search Walmart Store by Location..." id="search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by Team MapmyMart</p>
+        <p>Akash Verma. Yash Pandey. Srija Shukla</p>
+    </footer>
+</body>
+</html>
